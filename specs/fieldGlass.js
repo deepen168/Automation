@@ -15,8 +15,8 @@ fdescribe('Fill out timesheets', function(){
       var selectMondayMealBreakOut = $('#timeSheetMainTable > tbody > tr:nth-child(5) > td:nth-child(2)');
       var selectMondayMealBreakIn = $('#timeSheetMainTable > tbody > tr:nth-child(6) > td:nth-child(2)');
       var selectMondayTimeOut = $('#timeSheetMainTable > tbody > tr:nth-child(7) > td:nth-child(2)');
-      userNameField.sendKeys('deepan.kumar').then(function(){
-         passKey.sendKeys('3Wildworries').then(function () {
+      userNameField.sendKeys('').then(function(){
+         passKey.sendKeys('').then(function () {
             signIn.click().then(function(){
                selectView.click().then(function(){
                   selectTimesheetMenu.click().then(function(){
