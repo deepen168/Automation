@@ -1,4 +1,13 @@
 exports.config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['specs/expSpec.js']
+    specs: ['specs/expSpec.js'],
+    suites: {
+        full: ["specs/expSpec.js","specs/fieldGlass.js"],
+        another: "specs/expSpecTwo.js"
+    },
+    capabilities: {
+    browserName: 'chrome',
+    shardTestFiles: true,
+    maxInstances: 5
+  }
+
 };
